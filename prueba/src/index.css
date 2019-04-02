@@ -1,0 +1,59 @@
+.container {
+  display         : flex;
+  justify-content : center;
+}
+
+body {
+  font-family : 'Montserrat',
+                sans-serif;
+}
+
+.card {
+  padding          : 1em 2em;
+  background-color : #90979d;
+  box-shadow       : 4px 4px;
+}
+
+.card h1 {
+  text-align : center;
+}
+
+button {
+  display          : inline-block;
+  box-sizing       : border-box;
+  position         : relative;
+  min-width        : 64px;
+  height           : 36px;
+  padding          : 0 16px;
+  color            : rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  overflow         : hidden;
+  border           : none;
+  border-radius    : 4px;
+  background-color : rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  outline          : none;
+  box-shadow       : 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                     0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                     0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  text-align       : center;
+  text-transform   : uppercase;
+  text-overflow    : ellipsis;
+  vertical-align   : middle;
+  font-family      : var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  font-size        : 14px;
+  font-weight      : 500;
+  line-height      : 36px;
+  transition       : box-shadow 0.2s;
+  cursor           : pointer;
+}
+
+button:hover {
+  opacity : 0.50;
+}
+
+input {
+  width         : 300px;
+  padding       : 10px 10px 10px 5px;
+  border        : none;
+  border-bottom : 1px solid #757575;
+  font-size     : 18px;
+}
