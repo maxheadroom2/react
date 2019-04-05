@@ -1,9 +1,20 @@
 import React from 'react'
 
 const Input = (props) => {
-  return (
-    <input type="text" onChange={props.inputHandler}/>
-  )
+
+let { inputHandler, taskValue, } = props
+
+return (
+  <input
+    type="text"
+    placeholder="datos"
+    value={taskValue}
+    onChange={inputHandler}
+  />
+)
+
+
 }
 
 export default Input;
+// default.export = input;
