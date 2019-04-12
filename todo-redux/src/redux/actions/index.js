@@ -5,13 +5,30 @@ import {
   MARK_TASK_COMPLETED
 } from './actionTypes'
 
-// esto es un tyoe MARK_TASK_COMPLETED
-
-// pilot es un valor usamos task
-
-export const updateTask = Task => {
+export const updateTask = value => {
   return {
     type: UPDATE_TASK,
-    payload: task
+    payload: value
+  }
+}
+
+export const addTaskToList = () => {
+  return {
+    type: ADD_TASK_TO_LIST,
+    payload: null
+  }
+}
+
+export const removeItemFromList = index => {
+  return {
+    type: REMOVE_ITEM_FROM_LIST,
+    payload: index
+  }
+}
+
+export const markTaskCompleted = index => {
+  return {
+    type: MARK_TASK_COMPLETED,
+    payload: index
   }
 }

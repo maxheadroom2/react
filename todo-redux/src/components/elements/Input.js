@@ -2,19 +2,15 @@ import React from 'react'
 
 const Input = (props) => {
 
-let { inputHandler, taskValue, } = props
+  let { inputHandler, inputValue } = props
 
-return (
-  <input
-    type="text"
-    placeholder="datos"
-    value={taskValue}
-    onChange={inputHandler}
-  />
-)
-
-
+  return (
+    <input type="text"
+      placeholder="New task..."
+      value={inputValue}
+      onChange={inputHandler}
+      />
+  )
 }
 
-export default Input;
-// default.export = input;
+export default Input
